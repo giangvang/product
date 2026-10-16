@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Library - Landing Page</title>
+    <!-- Nhúng Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nhúng FontAwesome để sử dụng Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Tùy chỉnh bo góc cho các ảnh để giao diện mềm mại hơn */
+        .rounded-custom {
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fas fa-book-open-reader me-2"></i>AILib</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Tính năng</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary ms-lg-3 px-3" href="#cta">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. BANNER / HERO SECTION (Thay thế Jumbotron bằng Bootstrap 5 Utilities) -->
+    <header class="bg-light py-5 text-center">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-primary mb-3">Hệ Thống Quản Lý Thư Viện Tích Hợp AI</h1>
+                    <p class="lead text-muted mb-4">Nâng tầm văn hóa đọc và tối ưu hóa quy trình quản lý mượn trả bằng sức mạnh của Trí tuệ nhân tạo. Khám phá, tóm tắt và tìm kiếm sách chưa bao giờ dễ dàng đến thế.</p>
+                    <a href="#about" class="btn btn-primary btn-lg mb-5 px-5 rounded-pill shadow">Khám phá ngay</a>
+                </div>
+            </div>
+            <!-- Ảnh Hero sử dụng img-fluid để responsive -->
+            <img src="https://picsum.photos/1200/500?random=1" class="img-fluid rounded-custom shadow-lg" alt="Library Hero Image">
+        </div>
+    </header>
+
+    <!-- 3. KHU VỰC GIỚI THIỆU (1 Row: Image + Text) -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Cột Ảnh: Hiển thị trước trên Mobile, bên trái trên Desktop -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://picsum.photos/800/600?random=2" class="img-fluid rounded-custom shadow" alt="Giới thiệu thư viện AI">
+                </div>
+                <!-- Cột Nội dung -->
+                <div class="col-lg-6 px-lg-5">
+                    <h6 class="text-primary fw-bold text-uppercase tracking-wide">Về Dự Án</h6>
+                    <h2 class="fw-bold mb-4">Hiện đại hóa trải nghiệm đọc sách</h2>
+                    <p class="text-muted">Hệ thống của chúng tôi không chỉ dừng lại ở việc số hóa quản lý kho sách. Bằng việc áp dụng các mô hình ngôn ngữ lớn (LLM), hệ thống tự động sinh tóm tắt sách, cung cấp trợ lý ảo hỗ trợ bạn đọc tìm kiếm tài liệu theo ngữ nghĩa thay vì chỉ từ khóa truyền thống.</p>
+                    <p class="text-muted mb-4
